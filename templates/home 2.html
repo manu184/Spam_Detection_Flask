@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SpamDetection.com</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="C:\Users\Ankur Saini\PycharmProjects\spam_detection\statics\style.css">
+</head>
+<body style="background-color: cornsilk">
+
+<div>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Machine Learning App with Flask
+		</div>
+		<h2 style="color:Tomato;">Spam Detector For SMS </h2>
+			<img src="‪C:\Users\Ankur Saini\PycharmProjects\spam_detection\statics\images\football.jpg" height="100" width="500"/>
+		</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p style="color:DodgerBlue;">Enter Your Message Here</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="4" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+
+	</form>
+
+	</div>
+
+
+
+
+</body>
+</html>

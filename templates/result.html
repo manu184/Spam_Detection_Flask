@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Ankur Saini\PycharmProjects\spam_detection\statics\style.css">
+	<style>
+		body{
+			font:15px/1.5 Arial, Helvetica,sans-serif;
+			padding: 0px;
+			background-color:palevioletred;
+			background-image: url(C:\Users\Ankur Saini\PycharmProjects\spam_detection\statics\images\football.jpg);
+		}
+
+		.container{
+			width:100%;
+			margin: auto;
+			overflow: hidden;
+		}
+
+		header{
+			background:palevioletred;
+			border-bottom:palevioletred 3px solid;
+			height:120px;
+			width:100%;
+			padding-top:30px;
+
+		}
+
+		.main-header{
+					text-align:center;
+					background-color:olivedrab;
+					height:100px;
+					width:100%;
+					margin:0px;
+				}
+		#brandname{
+			float:center;
+			font-size:30px;
+			color: #fff;
+			margin: 10px;
+		}
+
+		header h2{
+			text-align:center;
+			color:#fff;
+
+		}
+
+	</style>
+</head>
+<body style="background-color: cornsilk">
+
+	<header style="text-align: center">
+		<div class="container">
+		<div id="brandname">
+			Machine Learning App with Flask
+		</div>
+		<h2 style="text-align: center">Spam Detector For SMS</h2>
+
+	</div>
+	</header>
+	<p style="color:olivedrab;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+
+
+
+	{% if prediction == 1%}
+	<h2 style="color:red;font-style: oblique;text-align: center;font-size: xx-large">Spam</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:red;font-style: oblique;text-align: center;font-size: xx-large">Not a Spam (It is a Ham)</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
